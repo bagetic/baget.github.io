@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:ital@1&display=swap');
+
+main {
+    margin: 0 auto;
+    max-width: 80ch;
+  }
+
+body{
+    font-family: Merriweather, serif ;
+    background: linear-gradient(90deg, #b76f34 52%, #aca711 100%);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+p{
+    color: bisque;
+}
+
+.nav-link{
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active{
+    color: yellow;
+}
+.nav-link:hover{
+    color: azure;
+}
+.navbar-nav .nav-link.active:hover{
+    color: azure;
+}
+
+.navbar-brand img{
+width: 40px;
+}
+
+.navbar-toggler{
+    color: aquamarine;
+    background-color: gray;
+}
+.navbar-toggler:hover{
+    color: azure;
+}
+
+.card   {
+   height: 90%;
+   color: bisque;
+}
+.card a  {
+    text-decoration: none;
+   color: bisque;
+}
+
+ 
+.card-body  {
+    background: linear-gradient(220deg, #b76f34 52%, #aca711 100%);
+}
+.card img  {
+    height: 57%;
+}
+
+.sidebar{
+background: linear-gradient(270deg, #b08520 52%, #aca711 100%);
+padding-left: 5px;
+color: rgb(141, 71, 20);
+
+}
+
+.carousel-inner img{
+    height: 55vh;
+}
+.slide-text {
+    margin: auto auto;
+}
+
+.carousel-indicators {
+    [data-bs-target]{
+        background-color: #aca711;
+    }
+}
+
+footer{
+    background-color: gray;
+    width: 100%;
+
+}
+.footer-text{
+    color: black;
+    margin: auto auto;
+    font-size: larger;
+}
+footer img{
+    height: 5vh;
+    width: 7vh;
+    
+}
+
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width: 755px){
+    .carousel-indicators{
+        display: none;
+    }
+}
